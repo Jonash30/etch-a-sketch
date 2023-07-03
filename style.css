@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header h1{
+    font-family: 'Knewave', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(63, 35, 9);
+}
+.container{
+    display: grid;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+#color-picker{
+    border: none;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.rainbow-btn{
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border: none;
+    padding: 25px 0;
+}
+.eraser-btn{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    padding: 0;
+}    
+button{
+    padding: 10px;
+    width: 120px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+button:focus{
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+.range-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+input[type="color"]::-webkit-color-swatch,
+input[type="color"]::-webkit-color-swatch-wrapper{
+    border: none;
+    border-radius: 10px;
+}
+input[type="range"]{
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 10px;
+}
+#grid-range::-webkit-slider-thumb {
+    background: black;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    border-radius: 50%;
+}
+.gridCell{
+    width: 100%;
+    padding-bottom: 100%;
+}
