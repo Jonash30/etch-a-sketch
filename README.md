@@ -11,3 +11,5 @@ A project built with HTML, CSS, and JS
 - You can also clear your grid entirely.
 
 Credits to font awesome for the svg icons.
+
+Live preview here: https://jonash30.github.io/etch-a-sketch/
